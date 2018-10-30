@@ -1,0 +1,845 @@
+/*
+
+Theme name : Znews tamplete
+Theme URI : www.example.com
+Author   : Tanvir Rahman
+Author URI :www.example.com
+Description: This is a newspaper tamplate .
+*/
+
+
+
+
+/*
+         INDEX:
+         1.TYPOGRAPHY
+         2.header
+         3.popular
+         4.BREAKING NEWS
+*/
+
+
+/* 1.TYPOGRAPHY  */
+div{
+  box-sizing: border-box;
+}
+
+body,ul,li{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.fix{
+  padding: 0px;
+}
+
+
+
+
+
+/* 2.HEADER  */
+/* 2.1  HEADER-TOP  */
+header{
+  background-image: url("../img/header-back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;background-size: cover;
+
+}
+
+
+header .header-top{
+  color:#a3a3a3;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #a3a3a3;
+
+}
+
+header .header-top .left p,header .header-top .right i{
+margin-top: 18px;
+}
+
+header .header-top .right{
+text-align: right;
+}
+
+header .header-top .right i{
+  margin-right: 14px;
+}
+
+
+
+/* 2.HEADER  */
+/* 2.2  HEADER-BRAND  */
+
+header .header-brand{
+    padding-top: 10px;
+}
+
+header .header-brand a{
+  color:white;
+}
+
+header .header-brand a:hover{
+  text-decoration: none;
+}
+
+header .header-brand .left{
+  color:#FFFFFF;
+font-family: 'Anton', sans-serif;
+letter-spacing:2px;
+}
+
+header .header-brand .left h1{
+  margin: 0px;
+  font-size: 75px;
+}
+
+
+header .header-brand .left span{
+  color:#E51515;
+}
+
+
+
+/* 2.HEADER  */
+/* 2.3  HEADER-NAV  */
+header .mynav{
+  background-color: transparent!important;
+ padding-left: 0px;
+}
+
+header .mynav button .span-hamburg{
+  color:white!important;
+}
+
+
+header .mynav a{
+    color:#FFFFFF!important;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+header .mynav ul li{
+  margin-right: 30px;
+}
+
+header .mynav ul li:first-child a{
+  color:#E51515!important;
+  padding-left: 0px!important;
+}
+
+
+@media all and (max-width:991px) {
+  header .mynav .my-collapse-div{
+    position: absolute;
+    top:100%;
+    width: 100%;
+padding-left: 15px;
+    background-color:black;
+    transition: .4s;
+    z-index: 99;
+    text-align: center;
+  }
+}
+
+@media all and (max-width:767px){
+  .header-top{
+    display: none;
+  }
+}
+
+
+
+
+/* 3.POPULAR  */
+
+.popular{
+  padding: 10px 0px;
+}
+
+.popular .left{
+  position: relative;
+  padding: 0px;
+}
+.popular .left img{
+
+}
+
+
+.popular .left span, .popular .left .headline,.popular .left p{
+  position: absolute;
+}
+
+.popular .left span{
+  top:315px;
+  left:60px;
+  background-color:#E51515;
+   color: white;
+   font-size: 10px;
+   padding: 3px;
+  font-weight: 700;
+  z-index: 98;
+}
+
+.popular .left .headline{
+  top:345px;
+  left:60px;
+  color: white;
+
+  font-family: 'Oswald', sans-serif;
+  z-index: 98;
+}
+
+
+.popular .left .headline a{
+  color:white;
+
+}
+
+.popular .left p{
+  top: 438px;
+  left: 60px;
+  color:#f1f2f6;
+  z-index: 98;
+  font-size: 14px;
+}
+
+
+.popular .left p i{
+  padding-right: 5px;
+}
+
+.popular .left .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0px;
+  left:0px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+.popular .right{
+padding: 0px;
+  position: relative;
+}
+
+.popular .right .top{
+  position: relative;
+  margin-bottom:19px;
+}
+
+.popular .right .bottom{
+  position: relative;
+}
+
+.popular .right .top,.popular .right .bottom{
+  padding: 0px;
+}
+
+.popular .right .top .headline a{
+  color:white;
+}
+
+.popular .right .bottom .headline a{
+  color:white;
+}
+
+.popular .right .top span, .popular .right .top .headline, .popular .right .top p{
+  position: absolute;
+
+}
+
+
+.popular .right .bottom span, .popular .right .bottom .headline, .popular .right .bottom p{
+  position: absolute;
+}
+
+.popular .right .top span, .popular .right .bottom span{
+  top:120px;
+  left:30px;
+  background-color:#E51515;
+   color: white;
+   font-size: 10px;
+   padding: 3px;
+  font-weight: 700;
+  z-index: 98;
+}
+
+.popular .right .top .headline, .popular .right .bottom .headline{
+  top: 145px;
+left: 30px;
+  color: white;
+  font-size: 27px;
+  font-family: 'Oswald', sans-serif;
+  z-index: 99;
+}
+
+
+.popular .right .top .headline h2, .popular .right .bottom .headline h2{
+  font-size: 18px;
+}
+
+.popular .right .top p, .popular .right .bottom p{
+  top: 201px;
+  left: 31px;
+  color: #f1f2f6;
+  z-index: 99;
+  font-size: 12px;
+}
+
+
+.popular .right .top p i, .popular .right .bottom p i{
+  padding-right: 5px;
+}
+
+.popular .right .top .overlay, .popular .right .bottom .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0px;
+  left:0px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+@media all and (max-width:1199px) {
+.popular .left span{
+      top: 252px;
+      left:10px;
+}
+
+.popular .left .headline{
+  top: 280px;
+  left:10px;
+}
+
+
+.popular .left p{
+  top: 370px;
+  left:10px;
+}
+
+.popular .right .top span, .popular .right .bottom span{
+  top:92px;
+  left:10px;
+
+}
+
+.popular .right .top .headline, .popular .right .bottom .headline{
+  top: 115px;
+  left:10px;
+
+}
+
+
+.popular .right .top p, .popular .right .bottom p{
+  top: 163px;
+  left:10px;
+}
+
+}
+
+
+@media all and (max-width:991px){
+.popular .left{
+  margin-bottom: 20px;
+}
+
+  .popular .left span{
+        top:60%;
+
+  }
+
+  .popular .left .headline{
+    top: 67%;
+
+  }
+
+
+  .popular .left p{
+    top: 86%;
+
+  }
+
+  .popular .right .top span, .popular .right .bottom span{
+  top:60%;
+
+
+  }
+
+  .popular .right .top .headline, .popular .right .bottom .headline{
+    top: 67%;
+
+
+  }
+.popular .right .top .headline h2, .popular .right .bottom .headline h2{
+    font-size: 30px;
+}
+
+  .popular .right .top p, .popular .right .bottom p{
+    top: 86%;
+
+  }
+
+}
+
+
+@media all and (max-width:767px){
+
+    .popular .left .headline h2{
+        font-size: 20px;
+    }
+  .popular .right .top .headline h2, .popular .right .bottom .headline h2{
+      font-size: 20px;
+  }
+
+
+}
+
+
+
+@media all and (max-width:420px){
+  .popular .left .headline h2{
+      font-size: 15px;
+  }
+.popular .right .top .headline h2, .popular .right .bottom .headline h2{
+    font-size: 15px;
+}
+
+
+.popular .left span{
+      top:57%;
+        font-size: 8px;
+}
+
+
+.popular .right .top span, .popular .right .bottom span{
+  top:57%;
+    font-size: 8px;
+
+}
+
+
+.popular .right .top p, .popular .right .bottom p{
+font-size: 10px;
+top:89%;
+}
+
+.popular .left p{
+  font-size: 10px;
+  top:89%;
+
+}
+
+
+}
+
+
+@media all and (max-width:300px){
+  .popular .left .headline h2{
+      font-size: 12px;
+  }
+.popular .right .top .headline h2, .popular .right .bottom .headline h2{
+    font-size: 12px;
+}
+
+}
+
+
+
+
+/*4.BREAKING NEWS*/
+
+
+.breaking .news{
+  border-bottom: 2px solid red;
+border-top: 2px solid red;
+margin-left: 17px;
+margin-right: 17px;
+}
+
+.breaking .news .left{
+  background-color: #E51515;
+  padding: 4px 5px;
+      padding-bottom: 6px;
+
+}
+
+.breaking .news .left h1{
+  color:white;
+  font-family: 'Oswald', sans-serif;
+  margin: 0px;
+padding: 0px;
+text-align: center;
+}
+
+.breaking .news .right p{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 10px;
+
+}
+
+marquee{
+  transform:translateX(-27px);
+  color:black;
+}
+
+
+
+@media all and (max-width:991px){
+  .breaking .news .right p{
+
+    margin-top: 30px;
+
+  }
+}
+
+
+@media all and (max-width:767px){
+  .breaking{
+
+  display: none;
+
+  }
+}
+
+
+
+
+/* 5.lattest */
+
+.lattest{
+  padding: 40px 0px;;
+}
+
+.lattest h1{
+  border-bottom: 2px solid gray;
+  padding: 0px;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+
+.lattest h1:after{
+  content:"";
+  position: absolute;
+  width:100px;
+  background-color: red;
+  height: 3px;
+  bottom:1px;
+  left:15px;
+}
+
+.lattest .item{
+  margin-top: 10px;
+}
+
+
+.lattest .item .img-head{
+  width:100%;
+  position: relative;
+}
+
+
+.lattest .item .img-head img{
+  width:100%;
+}
+
+.lattest .item .img-head span{
+  position:absolute;
+  bottom:0%;
+  background-color: red;
+  color:white;
+  padding: 5px 10px;
+  font-family: arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+
+}
+
+
+.lattest .item p{
+  font-family: 'Oswald', sans-serif;
+  color:black;
+  font-size: 23px;
+
+}
+
+
+
+@media all and (max-width:576px) {
+  .lattest .item p{
+
+    font-size: 18px;
+
+  }
+}
+
+
+
+/* 5.LAST WEEK */
+
+.last-week{
+  margin-top: 50px;
+}
+.last-week .last{
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+
+.last-week h2:after{
+  content: "";
+  position: absolute;
+  width:100px;
+  height: 4px;
+  background-color: red;
+  bottom:29px;
+  left: 14px;
+}
+
+.last-week .item{
+  margin-bottom: 35px;
+}
+
+.last-week .item span{
+  background: red;
+  padding: 5px 10px;
+  color:white;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: arial, sans-serif;
+}
+
+
+
+.last-week .item h1{
+  margin: 0px;
+  font-family: arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 7px 0px;;
+}
+
+
+.last-week .item p{
+color:black!important;
+margin-top:0px;
+font-size: 12px;
+}
+
+.last-week .item .info{
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.last-week .item p i{
+margin-right: 4px;
+}
+
+
+
+
+.last-week .most-vu{
+border-bottom: 3px solid black;
+padding-bottom: 15px;
+margin-bottom: 30px;
+}
+
+.last-week .most-vu:after{
+  content: "";
+  position: absolute;
+  width:100px;
+  height: 4px;
+  background-color: red;
+  bottom:0%;
+  left: 14px;
+}
+
+
+.last-week .item2 .img-head{
+  position: relative;
+}
+
+
+.last-week .item2 .img-head span{
+  position:absolute;
+  bottom:0%;
+  background-color: red;
+  color:white;
+  padding: 5px 10px;
+  font-family: arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+
+}
+
+
+
+.last-week .item2 .most-view-para{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+
+.last-week .item2 p{
+  font-size: 14px;
+}
+
+.last-week .item2 p i{
+margin-right: 5px;
+}
+
+.last-week .view-items{
+  margin-bottom: 30px;
+}
+
+.last-week .view-items h4{
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+  background-color: #141416;
+  padding: 50px 0px;
+
+}
+
+
+footer .item h1{
+  font-size:20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color:white;
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+
+}
+
+
+footer .item h1:before{
+  content:"";
+  position: absolute;
+  background: red;
+  top: 46px;
+  left: 10px;
+  width:100px;
+  height: 3px;
+
+}
+
+
+
+footer .item p{
+  color: white;
+  font-size: 16px;
+  color:gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*news room*/
+ .news-room h1{
+   font-weight: 900;
+ }
+
+
+ .news-room .most-vu{
+ border-bottom: 3px solid black;
+ padding-bottom: 15px;
+ margin-bottom: 30px;
+ margin-top: 30px;
+ }
+
+.news-room .most-vu:after{
+   content: "";
+   position: absolute;
+   width:100px;
+   height: 4px;
+   background-color: red;
+   bottom:0%;
+   left: 14px;
+ }
+
+
+ .news-room .item2 .img-head{
+   position: relative;
+ }
+
+
+.news-room .item2 .img-head span{
+   position:absolute;
+   bottom:0%;
+   background-color: red;
+   color:white;
+   padding: 5px 10px;
+   font-family: arial, sans-serif;
+   font-size: 10px;
+   font-weight: 700;
+
+ }
+
+
+
+
+  .news-room .item2 .most-view-para{
+   font-size: 18px;
+   font-weight: 700;
+   margin-bottom: 4px;
+ }
+
+
+ .news-room .item2 p{
+   font-size: 14px;
+ }
+
+ .news-room .item2 p i{
+ margin-right: 5px;
+ }
+
+ .news-room .view-items{
+   margin-bottom: 30px;
+ }
+
+ .news-room .view-items h4{
+   font-size: 15px;
+ }
